@@ -1,0 +1,10 @@
+{
+  "livePreview": false,
+  "defaultViewMode": "preview",
+  "attachmentFolderPath": "./",
+  "trashOption": "local",
+  "newFileLocation": "current",
+  "propertiesInDocument": "hidden",
+  "foldHeading": false,
+  "showInlineTitle": false
+}

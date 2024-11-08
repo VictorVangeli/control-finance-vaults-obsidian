@@ -1,0 +1,86 @@
+{
+  "editorPosition": "mainView",
+  "attachShortcutToGlobalWindow": true,
+  "globalNamespace": "MF",
+  "formDefinitions": [
+    {
+      "title": "Добавить учет",
+      "name": "Добавить учет",
+      "fields": [
+        {
+          "name": "Тип",
+          "label": "Тип",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "Расход",
+                "label": "Расход"
+              },
+              {
+                "value": "Доход",
+                "label": "Доход"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Счет",
+          "label": "Счет",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "notes",
+            "folder": "Учет финансов/Utils/Словарь ключей/Счет"
+          }
+        },
+        {
+          "name": "Категория трат",
+          "label": "Категория трат",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "notes",
+            "folder": "Учет финансов/Utils/Словарь ключей/Категория трат"
+          }
+        },
+        {
+          "name": "Сумма",
+          "label": "Сумма",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "Дата",
+          "label": "Дата",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "date",
+            "hidden": false
+          }
+        },
+        {
+          "name": "Комментарий",
+          "label": "Комментарий",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    }
+  ]
+}
