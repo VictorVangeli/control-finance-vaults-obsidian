@@ -1,34 +1,14 @@
 {
   "main": {
-    "id": "5324373015726ba8",
+    "id": "b553f2c70e18b2f6",
     "type": "split",
     "children": [
       {
-        "id": "e9671878bd032196",
+        "id": "664c29976dacc297",
         "type": "tabs",
         "children": [
           {
-            "id": "28cb7d8b3430f64b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          }
-        ]
-      },
-      {
-        "id": "301d5da4b721a3b9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "69bc6325ddeb41ff",
+            "id": "ca0ecef3c1e565de",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -47,27 +27,27 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "85db4e7197cf6aca",
+    "id": "c38b6ea2a308c663",
     "type": "split",
     "children": [
       {
-        "id": "9a7bdfce2b2065e2",
+        "id": "00176769d1dd00b7",
         "type": "tabs",
         "children": [
           {
-            "id": "04233913311d0187",
+            "id": "6e6851b197ce7bc3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTimeReverse"
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
               "title": "Файловый менеджер"
             }
           },
           {
-            "id": "a6677b8326a1ab8b",
+            "id": "617e52c13e4af141",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -84,23 +64,13 @@
             }
           },
           {
-            "id": "ec45bf31a6f322d2",
+            "id": "f2efec8487f23b01",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
               "title": "Закладки"
-            }
-          },
-          {
-            "id": "acc70c8831de000a",
-            "type": "leaf",
-            "state": {
-              "type": "trash-explorer",
-              "state": {},
-              "icon": "trash",
-              "title": "Trash explorer"
             }
           }
         ]
@@ -110,15 +80,15 @@
     "width": 300
   },
   "right": {
-    "id": "2e0d90c847e1c184",
+    "id": "2221689c10c61b5e",
     "type": "split",
     "children": [
       {
-        "id": "bc9f84bdc2175224",
+        "id": "e160463893859af0",
         "type": "tabs",
         "children": [
           {
-            "id": "ed34793aa37988ff",
+            "id": "c0da88c6be220b1a",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -137,21 +107,21 @@
             }
           },
           {
-            "id": "db164fd4d1e4abcf",
+            "id": "6fd8c8902823dfad",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Учет финансов/Учет финансов.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Исходящие ссылки из Учет финансов"
+              "title": "Исходящие ссылки из README"
             }
           },
           {
-            "id": "f207c477e643deb7",
+            "id": "4faef7d4c9206982",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -164,19 +134,18 @@
             }
           },
           {
-            "id": "f3afba12d223d005",
+            "id": "56bf24985c4e30ee",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Учет финансов/Учет финансов.md"
+                "file": "README.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Учет финансов"
+              "title": "Структура README"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -190,59 +159,23 @@
       "canvas:Создать новый холст": false,
       "daily-notes:Сегодняшняя заметка": false,
       "templates:Вставить шаблон": false,
-      "command-palette:Открыть палитру команд": false,
-      "templater-obsidian:Templater": false,
-      "modalforms:Edit forms": false,
-      "homepage:Open homepage": false,
-      "obsidian-trash-explorer:Open trash explorer": false
+      "command-palette:Открыть палитру команд": false
     }
   },
-  "active": "04233913311d0187",
+  "active": "ca0ecef3c1e565de",
   "lastOpenFiles": [
-    "Учет финансов/Учет финансов.md",
+    "control-finance-vaults-obsidian/README.md",
     "README.md",
-    "Pasted image 20241109153354.png",
-    "Pasted image 20241109140753.png",
-    "Pasted image 20241109143844.png",
-    "Pasted image 20241109143815.png",
-    "Pasted image 20241109143737.png",
-    "Pasted image 20241109143705.png",
-    "Pasted image 20241109143655.png",
-    "Pasted image 20241109143527.png",
-    "Pasted image 20241109143503.png",
-    "Pasted image 20241109143420.png",
-    "Учет финансов/Доходы/Зарплата/10000_09-11-2024.md",
-    "Учет финансов/Доходы/Зарплата",
-    "Учет финансов/Доходы",
-    "Учет финансов/Расходы/Развлечения/1500_09-11-2024.md",
-    "Учет финансов/Расходы/Развлечения",
-    "Учет финансов/Расходы/Еда/100_09-11-2024.md",
-    "Новая папка",
     "Templates/controlFinance_to_refresh_filter.md",
-    "Учет финансов/Расходы/Еда",
-    "Учет финансов/Расходы",
-    "Учет финансов/Utils/Temporary/temp_controlFinance.md",
-    "Учет финансов/Utils/Temporary",
-    "Учет финансов/Utils",
-    "Учет финансов",
-    "Учет финансов/Доходы/Зарплата/1_09-11-2024.md",
     "Templates/controlFinance_for_commands.md",
-    "Учет финансов/Расходы/Еда/2_09-11-2024.md",
-    "Templates/controlFinance_for_commands(dev).md",
-    "Учет финансов/Расходы/Еда/1_09-11-2024.md",
-    "Учет финансов/Расходы/Еда/_09-11-2024.md",
-    "Templates/controlFinance_to_refresh_filter(dev).md",
-    "Учет финансов/Доходы/Зарплата/100_04-09-2024.md",
-    "Учет финансов/Расходы/Еда/2_09-10-2024.md",
-    "Учет финансов/Расходы/Еда/0_27-10-2024.md",
-    "Учет финансов/Доходы/Зарплата/100_30-10-2024.md",
-    "Учет финансов/Расходы/Еда/1231231_30-10-2024.md",
-    "Учет финансов/Доходы/Зарплата/1000_02-10-2024.md",
-    "Учет финансов/Расходы/Еда/10_09-11-2024.md",
-    "Учет финансов/Доходы/Зарплата/100_09-11-2024.md",
-    "Учет финансов/Расходы/Быт/200_09-11-2024.md",
-    "Учет финансов/Расходы/Быт",
-    "Учет финансов/Расходы/Еда/1000_09-11-2024.md",
-    "Учет финансов/Расходы/Еда/1_09-11-2024---.md"
+    "Templates",
+    "Учет финансов/Расходы/Еда/100_09-11-2024.md",
+    "Учет финансов/Utils/Temporary/temp_controlFinance.md",
+    "Учет финансов/Расходы/Еда",
+    "Учет финансов/Utils/Temporary",
+    "Учет финансов/Учет финансов.md",
+    "Учет финансов/Расходы",
+    "Учет финансов/Utils",
+    "Учет финансов"
   ]
 }

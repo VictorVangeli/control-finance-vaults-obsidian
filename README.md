@@ -291,7 +291,7 @@ Control Finance -  это готовое хранилище, которое по
 ### 3. Как устроена система?
 1. При открытии хранилища по умолчанию открывается файл `Учет финансов`, в котором отражается текущая информация по доходам/расходам
 
-![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109140753.png)
+![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109140753.png)
 
 2. Логически структура файла разделена на 2 блока:
 	- Фильтрации по критериям;
@@ -319,7 +319,7 @@ Control Finance -  это готовое хранилище, которое по
 Для того, чтобы внести новую операцию в систему необходимо:
 1. Вызвать модальное окно, находящееся в правом верхнем углу (иконка `Accesability`)
    
-![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109140907.png)
+![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109140907.png)
 2. В появившемся окне доступны следующие поля:
    
 >[!TIP]
@@ -334,7 +334,7 @@ Control Finance -  это готовое хранилище, которое по
 	- Дата: вам предлагается указать дату, когда была совершена операция, но если вы не взаимодействуете с этим полем, то по умолчанию система проставит текущую дату
 	- Комментарий: в этом поле вы можете оставить примечание об особенностях этой операции
 
-![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109140924.png)
+![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109140924.png)
 
 3. После того как вы заполнили шаблон необходимой информацией будет создан соответствующий файл (заметка) в дирректории `Учет финансов/Доходы/Расходы(в зависимости от того, что выбрали)/название категории`, о чем система отправит соответствующее уведомление
    
@@ -358,7 +358,7 @@ Control Finance -  это готовое хранилище, которое по
 
 Также вы можете увидеть изменения в файле `Учет финансов`
 
-![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109141036.png)
+![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109141036.png)
 
 ---
 
@@ -370,13 +370,13 @@ Control Finance -  это готовое хранилище, которое по
 - В зависимости от даты: (можно выбрать начальную, конечную или срез)
 - В зависимости от суммы: (можно выбрать больше, меньше или равно сумме)
 
-![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109141212.png)
+![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109141212.png)
 
 Предположим, что у нас имеется (пока что) небольшой список операций, но нам нужно получить только данные, которые прошли по бизнес-счету. Для этого нам необходимо выбрать в блоке `Счет` - `Бизнес-счет` и применить фильтрацию нажатием кнопки `Обновить фильтрацию`
 
 После чего система проанализирует все записанные операции и выведет только те, которые соответствуют условиям: 
 
-![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109142503.png)
+![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109142503.png)
 
 Также есть возможность ограничить количество записей, которое будет отображено, по умолчанию, если значения там нет - будут выводиться все доступные записи
 
@@ -393,7 +393,7 @@ Templater необходим для того, чтобы обрабатыват�
 - `Automatic jump to cursor`
 - Регистрация конкретных шаблонов в `Template Hotkeys`, чтобы иметь возможность вызывать шаблоны через `Meta Bind Button` и `Quick Add`
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109142756.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109142756.png)
 
 ---
 
@@ -409,7 +409,7 @@ C помощью этого плагина у нас появляется воз
 
 В настройках плагина нам нужно поставить галочку напротив `Attach Modal-Form Shortcut to Global Window`
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109142826.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109142826.png)
 
 А в режиме редактирования форм `Manage forms`, нам необходимо определить форму, которую будем вызывать в дальнейшем при обработке нашего `Templater` шаблона
 =======
@@ -502,16 +502,16 @@ C помощью этого плагина у нас появляется воз
 Получить доступ к этому разделу можно следующими способами: 
 1. Вызвать палитру команд через `Ctrl + P` или `Cmd + P` 
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109142924.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109142924.png)
 
 2. Вызвать контекстное меню через кнопку на боковой панели
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109142942.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109142942.png)
 
 3. Перейти по специально созданной с помощью `Commander` кнопки на `Панели вкладок`
 Перейдя в этот раздел нам доступны текущие формы, в данном хранилище реализована только одна форма. 
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143046.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143046.png)
 
 Если нажать на кнопку `Edit`, то мы попадаем в меню редактирования этой формы, где нам доступно редактирование полей. 
 
@@ -521,7 +521,7 @@ C помощью этого плагина у нас появляется воз
 
 Также такой подход позволяет инициалиировать хранилище по нажатию кнопки, следовательно, нужно чтобы у пользователя были созданы соответствующие преднастройки и нет необходимости дублирования всей дирректории "Учет финансов"
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143300.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143300.png)
 
 ---
 
@@ -533,7 +533,7 @@ C помощью этого плагина у нас появляется воз
 
 В меню настроек плагина нас интересует создание команды `addFinanceOperation`. 
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143349.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143349.png)
 
 Чтобы все корректно работало, необходимо активировать иконку "молнии", а также перейти в непосредственные настройки комманды, нажав на "шестеренку".
 
@@ -543,7 +543,7 @@ C помощью этого плагина у нас появляется воз
 - указать место его создания;
 - условие перезаписи временного файла при каждом вызове команды;
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143420.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143420.png)
 
 ---
 
@@ -554,11 +554,11 @@ C помощью этого плагина у нас появляется воз
 2. Кнопки `QuickAdd:addFinanceOperation` , которая после создания стала доступна для вызова как команда в режиме `Палитры команд`
 3. Кнопки `Modal forms: Manage forms`, которая позволит перейти в меню изменения модальной формы
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143046.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143046.png)
 
   Для этого в настройках плагина в разделе `Панель вкладок` нам необходимо зарегистрировать соответствующие кнопки
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143503.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143503.png)
 
 --- 
 #### Homepage
@@ -576,8 +576,8 @@ C помощью этого плагина у нас появляется воз
 - в поле `Opened View` необходимо выбрать Reading view;
 - в самом низу выбрать `Refresh Dataview`
 
- ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143655.png)
-  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143705.png)
+ ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143655.png)
+  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143705.png)
 
 ---
 #### Dataview
@@ -599,8 +599,8 @@ C помощью этого плагина у нас появляется воз
 - `Warn on empty result`
 - `Automatic view refreshing`
 
-  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143737.png)
-  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143815.png)
+  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143737.png)
+  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143815.png)
 
 ---
 
@@ -622,5 +622,5 @@ C помощью этого плагина у нас появляется воз
 
 Этот снипет нам нужен для того, чтобы получить красивое оформление внутри `Callout`
 
-  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109143844.png)
+  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109143844.png)
 
