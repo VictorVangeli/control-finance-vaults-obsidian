@@ -55,9 +55,11 @@ Control Finance -  это готовое хранилище, которое по
 1. Если у вас нет директории с шаблонами, то скопируйте из моего хранилища папку `Templates`
 2. Проверьте настройки `Templater` на предмет верного пути к папке с шаблонами, при необходимости - укажите его
 3. Зарегистрируйте шаблоны в настройках `Templater`, указав путь `controlFinance_for_commands.md` и `controlFinance_to_refresh_filter.md`
-4. В настройках `QuickAdd` перейдите в настройки команды `addFinanceOperation` и укажите корректный путь к шаблону в поле `Template Path`
+4. В настройках `QuickAdd` перейдите в настройки команды `addFinanceOperation` и укажите корректный путь к шаблону в поле `Template Path` (о том, что должно быть в команде найдете в соответствующем разделе)
 5. Скопируйте `MCL Multi Column.css `в свою дирректорию внутри `.obsidian/snippets`
 6. Если у вас установлен `Modal Form` - перейдите в дирректорию `.obsidian/plugins/modalforms` и обновите содержимое файла `data.json` скопировав содержимое из моего хранилища по аналогичному пути
+7. Если у вас установлен `Commander` - перейдите в настройки плагина и добавьте вызов `QuickAdd: addFinanceOpertation` в `Панель вкладок` (подробнее об этом дальше)
+8. Если у вас не уставнлен `Commander` - скопируйте настроенный плагин из моего хранилища
 
 ---
 
@@ -235,7 +237,7 @@ C помощью этого плагина у нас появляется воз
 - условие перезаписи временного файла при каждом вызове команды;
 
 <img src="https://github.com/VictorVangeli/control-finance-vaults-obsidian/blob/main/Учет%20финансов/Utils/Media/Pasted%20image%2020241108202526.png" height="697px">
-<img src="https://github.com/VictorVangeli/control-finance-vaults-obsidian/blob/main/Учет%20финансов/Utils/Media/Pasted%20image%2020241108202733.png" height="697px">
+<img src="https://github.com/VictorVangeli/control-finance-vaults-obsidian/blob/main/Учет%20финансов/Utils/Media/Pasted%20image%2020241108202733.png" height="174.5px">
 
 ---
 
