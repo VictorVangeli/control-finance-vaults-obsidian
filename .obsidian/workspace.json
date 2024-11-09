@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e8d3e4d233abe9e8",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "8acf73516c612f00",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Учет финансов/Учет финансов.md",
-                "mode": "preview",
-                "source": true
+                "file": "Учет финансов/Utils/Media/Pasted image 20241108202949.png"
               },
-              "icon": "lucide-file",
-              "title": "Учет финансов"
+              "icon": "lucide-image",
+              "title": "Pasted image 20241108202949"
             }
           }
         ]
@@ -149,10 +147,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Учет финансов/Учет финансов.md"
+                "file": "Учет финансов/Utils/Media/Pasted image 20241108202949.png"
               },
               "icon": "lucide-list",
-              "title": "Структура Учет финансов"
+              "title": "Структура Pasted image 20241108202949"
             }
           }
         ],
@@ -176,13 +174,16 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "8acf73516c612f00",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "Учет финансов/Utils/Media/Pasted image 20241108202733.png",
+    "Учет финансов/Utils/Media/Pasted image 20241108202949.png",
+    "README.md",
     "Учет финансов/Учет финансов.md",
+    "Учет финансов/Без названия.md",
     "Учет финансов/Расходы/Еда/100_08-11-2024.md",
     "Учет финансов/Расходы/Еда",
     "Учет финансов/Расходы",
-    "README.md",
     "2.-Как-интегрировать-в-своё-хранилище?.md",
     "Templates/controlFinance_to_refresh_filter.md",
     "Templates/controlFinance_for_commands.md",
@@ -208,8 +209,6 @@
     "Учет финансов/Utils/Словарь ключей/Категория трат/Развлечения.md",
     "Учет финансов/Utils/Словарь ключей/Категория трат/Подарки.md",
     "Учет финансов/Utils/Словарь ключей/Категория трат/Одежда.md",
-    "Учет финансов/Utils/Словарь ключей/Категория трат/Медицина.md",
-    "Учет финансов/Utils/Словарь ключей/Категория трат/Машина.md",
     "Учет финансов/Utils/Словарь ключей/Счет",
     "Учет финансов/Utils/Словарь ключей/Категория трат",
     "Учет финансов/Utils/Media/Pasted image 20241108205635.png",
@@ -219,8 +218,6 @@
     "Учет финансов/Utils/Media/Pasted image 20241108203720.png",
     "Учет финансов/Utils/Media/Pasted image 20241108203528.png",
     "Учет финансов/Utils/Media/Pasted image 20241108203101.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108202949.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108202733.png",
     "Учет финансов/Utils/Media/Pasted image 20241108202526.png",
     "Учет финансов/Utils/Словарь ключей",
     "Учет финансов/Utils/Media"
