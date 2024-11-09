@@ -7,6 +7,7 @@ Control Finance -  это готовое хранилище, которое по
 
 Мы используем `Modal Form` для того, чтобы получить возможность указывать подходящие нам категории трат, источников дохода, а также откуда списались или куда пришли деньги. 
 
+
 >[!CAUTION]
 >Особенности релиза: 
 >- Работает на телефонах: Да
@@ -57,16 +58,16 @@ Control Finance -  это готовое хранилище, которое по
 
 ### 2. Как интегрировать в своё хранилище?
 
-
 1. Если у вас есть директория с шаблонами:
 	 - поместите файлы `controlFinance_for_commands.md` и `controlFinance_to_refresh_filter.md` в нее
 	- в файле `controlFinance_for_commands.md `замените содержимое `const path_to_templates = 'Templates/controlFinance_to_refresh_filter.md'` и укажите актуальный путь
 2. Если у вас нет директории с шаблонами, то скопируйте из моего хранилища папку `Templates`
 3. Проверьте настройки `Templater` на предмет верного пути к папке с шаблонами, при необходимости - укажите его
-4. Зарегистрируйте шаблоны в настройках `Templater`, указав путь `controlFinance_for_commands.md` и `controlFinance_to_refresh_filter.md`
 4. В настройках `QuickAdd` перейдите в настройки команды `addFinanceOperation` и укажите корректный путь к шаблону в поле `Template Path` (о том, что должно быть в команде найдете в соответствующем разделе)
 5. Скопируйте `MCL Multi Column.css `в свою дирректорию внутри `.obsidian/snippets`
-6. Если у вас установлен `Modal Form` - перейдите в дирректорию `.obsidian/plugins/modalforms` и обновите содержимое файла `data.json` скопировав содержимое из моего хранилища по аналогичному пути
+6. Если у вас установлен `Modal Form` - перейдите в дирректорию `.obsidian/plugins/modalforms` и обновите содержимое файла `data.json` скопировав содержимое из моего хранилища по аналогичному пути (код формы вы также можете найти в описании соответствующего раздела с более подробными инструкциями)
+7. Если у вас установлен `Commander` - перейдите в настройки плагина и добавьте вызов `QuickAdd: addFinanceOpertation` в `Панель вкладок` (подробнее об этом дальше)
+8. Если у вас не уставнлен `Commander` - скопируйте настроенный плагин из моего хранилища
 
 >[!NOTE]
 >Важно: нужно именно дополнить, т.к. сверху идет блок с настройками плагина:
@@ -411,6 +412,92 @@ C помощью этого плагина у нас появляется воз
  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/fast_alternative/.github/images/Pasted%20image%2020241109142826.png)
 
 А в режиме редактирования форм `Manage forms`, нам необходимо определить форму, которую будем вызывать в дальнейшем при обработке нашего `Templater` шаблона
+=======
+Содержимое нашей формы в JSON формате, которое можно найти в `.obsidian/plugins/modalforms/data.json`. Скопируйте и дополните уже существующий `data.json`, чтобы не поломать настройку плагина.
+```{
+    {
+      "title": "Добавить учет",
+      "name": "Добавить учет",
+      "fields": [
+        {
+          "name": "Тип",
+          "label": "Тип",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "fixed",
+            "options": [
+              {
+                "value": "Расход",
+                "label": "Расход"
+              },
+              {
+                "value": "Доход",
+                "label": "Доход"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Счет",
+          "label": "Счет",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "notes",
+            "folder": "Учет финансов/Utils/Словарь ключей/Счет"
+          }
+        },
+        {
+          "name": "Категория трат",
+          "label": "Категория трат",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "select",
+            "source": "notes",
+            "folder": "Учет финансов/Utils/Словарь ключей/Категория трат"
+          }
+        },
+        {
+          "name": "Сумма",
+          "label": "Сумма",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "text",
+            "hidden": false
+          }
+        },
+        {
+          "name": "Дата",
+          "label": "Дата",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "date",
+            "hidden": false
+          }
+        },
+        {
+          "name": "Комментарий",
+          "label": "Комментарий",
+          "description": "",
+          "isRequired": false,
+          "input": {
+            "type": "textarea",
+            "hidden": false
+          }
+        }
+      ],
+      "version": "1"
+    }
+  ]
+}
+```
+
 
 Получить доступ к этому разделу можно следующими способами: 
 1. Вызвать палитру команд через `Ctrl + P` или `Cmd + P` 
