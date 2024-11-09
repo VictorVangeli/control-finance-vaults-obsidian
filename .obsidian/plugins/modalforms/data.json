@@ -9,7 +9,7 @@
       "fields": [
         {
           "name": "Тип",
-          "label": "Добавить доход",
+          "label": "Вид операции",
           "description": "",
           "isRequired": false,
           "input": {
@@ -60,8 +60,8 @@
           }
         },
         {
-          "name": "Категория трат",
-          "label": "Категория трат",
+          "name": "Категория расхода",
+          "label": "Категория расхода",
           "description": "",
           "isRequired": false,
           "input": {
@@ -113,7 +113,55 @@
                 "label": "Другое"
               }
             ]
+          },
+          "condition": {
+            "dependencyName": "Тип",
+            "type": "contains",
+            "value": "Расход"
           }
+        },
+        {
+          "name": "Категория дохода",
+          "label": "Категория дохода",
+          "description": "",
+          "input": {
+            "type": "select",
+            "allowUnknownValues": false,
+            "hidden": false,
+            "options": [
+              {
+                "value": "Зарплата",
+                "label": "Зарплата"
+              },
+              {
+                "value": "Выплата по договору",
+                "label": "Выплата по договору"
+              },
+              {
+                "value": "Кредит",
+                "label": "Кредит"
+              },
+              {
+                "value": "Долг",
+                "label": "Долг"
+              },
+              {
+                "value": "Подарок",
+                "label": "Подарок"
+              },
+              {
+                "value": "Другое",
+                "label": "Другое"
+              }
+            ],
+            "source": "fixed"
+          },
+          "condition": {
+            "dependencyName": "Тип",
+            "type": "contains",
+            "value": "Доход"
+          },
+          "isRequired": false
         },
         {
           "name": "Сумма",

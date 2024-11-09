@@ -20,18 +20,15 @@ async function processData() {
 
     // Инициализация переменных для хранения данных из формы
     const account = data["Счет"] || "Не указан";
-    const category = data["Категория трат"] || "Не указана";
+    const category = operationType === "Доход" 
+        ? data["Категория дохода"] || "Не указана" 
+        : data["Категория расхода"] || "Не указана";
     const amount = data["Сумма"] || "0";
-    const date = data["Дата"] || new Date().toLocaleDateString();
+    const date = data["Дата"] && !isNaN(Date.parse(data["Дата"]))
+        ? new Date(data["Дата"]).toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' })
+        : new Date().toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' });
     const comment = data["Комментарий"] || "Нет комментария";
 
-    // Логирование данных
-    console.log("Тип операции:", operationType);
-    console.log("Счет:", account);
-    console.log("Категория:", category);
-    console.log("Сумма:", amount);
-    console.log("Дата:", date);
-    console.log("Комментарий:", comment);
 
     // Создание директории для учета финансов
     const baseDirectory = "Учет финансов";
@@ -41,7 +38,6 @@ async function processData() {
 
     if (!vault.getAbstractFileByPath(fullDirectory)) {
         await vault.createFolder(fullDirectory);
-        console.log(`Создана директория: ${fullDirectory}`);
     }
 
     // Формирование базового имени файла
@@ -258,7 +254,9 @@ return engine.markdown.create(str);
 >>        p["Счет"] || '—',
 >>        p["Категория"] || '—',
 >>        p["Сумма"] || '—',
->>        new Date(p["Дата"]).toLocaleDateString('ru-RU') || '—'
+>>        p["Дата"] && !isNaN(Date.parse(p["Дата"].split('.').reverse().join('-')))
+>>    ? new Date(p["Дата"].split('.').reverse().join('-')).toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ' г.'
+>>    : '—'
 >>    ]);
 >>    dv.table(["Файл", "Счет", "Категория", "Сумма", "Дата"], tableData);
 >>    dv.paragraph('<div style="text-align: right;"><strong>Итого:</strong> ' + totalOperations + ' операций, Общая сумма: ' + totalSum.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) + '</div>');
@@ -325,7 +323,9 @@ return engine.markdown.create(str);
 >>        p["Счет"] || '—',
 >>        p["Категория"] || '—',
 >>        p["Сумма"] || '—',
->>        new Date(p["Дата"]).toLocaleDateString('ru-RU') || '—'
+>>        p["Дата"] && !isNaN(Date.parse(p["Дата"].split('.').reverse().join('-')))
+>>    ? new Date(p["Дата"].split('.').reverse().join('-')).toLocaleDateString('ru-RU', { day: '2-digit', month: '2-digit', year: 'numeric' }) + ' г.'
+>>    : '—'
 >>    ]);
 >>    dv.table(["Файл", "Счет", "Категория", "Сумма", "Дата"], tableData);
 >>    dv.paragraph('<div style="text-align: right;"><strong>Итого:</strong> ' + totalOperations + ' операций, Общая сумма: ' + totalSum.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) + '</div>');

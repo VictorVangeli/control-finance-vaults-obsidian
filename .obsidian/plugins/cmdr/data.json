@@ -13,13 +13,21 @@
       "id": "quickadd:choice:92dbe07e-538e-47fd-a4e0-e8a3c150465e",
       "icon": "lucide-accessibility",
       "name": "QuickAdd: addFinanceOpertation",
-      "mode": "any"
+      "mode": "any",
+      "color": "#60e1fb"
     },
     {
       "id": "homepage:open-homepage",
       "icon": "lucide-home",
       "name": "Homepage: Open homepage",
       "mode": "any"
+    },
+    {
+      "id": "modalforms:manage-forms",
+      "icon": "lucide-copy-plus",
+      "name": "Modal forms: Manage forms",
+      "mode": "any",
+      "color": "#dbd375"
     }
   ],
   "macros": [],
