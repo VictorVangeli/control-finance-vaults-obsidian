@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "1301b511462550ae",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "11c76df57b368c79",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Учет финансов/Учет финансов.md",
+                "file": "README.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Учет финансов"
+              "title": "README"
             }
           }
         ]
@@ -179,9 +179,10 @@
   },
   "active": "04233913311d0187",
   "lastOpenFiles": [
+    "Учет финансов/Учет финансов.md",
+    "Pasted image 20241109140753.png",
     "README.md",
     "Pasted image 20241109143844.png",
-    "Учет финансов/Учет финансов.md",
     "Pasted image 20241109143815.png",
     "Pasted image 20241109143737.png",
     "Pasted image 20241109143705.png",
@@ -190,7 +191,6 @@
     "Pasted image 20241109143503.png",
     "Pasted image 20241109143420.png",
     "Pasted image 20241109143349.png",
-    "Pasted image 20241109143300.png",
     "Учет финансов/Доходы/Зарплата/10000_09-11-2024.md",
     "Учет финансов/Доходы/Зарплата",
     "Учет финансов/Доходы",
