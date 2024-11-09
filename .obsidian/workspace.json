@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "b46c55ee0f884859",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "308a00dfffb9af45",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "Учет финансов/Utils/Media/Pasted image 20241108202949.png"
+                "file": "README.md",
+                "mode": "preview",
+                "source": true
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20241108202949"
+              "icon": "lucide-file",
+              "title": "README"
             }
           }
         ]
@@ -147,10 +149,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Учет финансов/Utils/Media/Pasted image 20241108202949.png"
+                "file": "README.md"
               },
               "icon": "lucide-list",
-              "title": "Структура Pasted image 20241108202949"
+              "title": "Структура README"
             }
           }
         ],
@@ -158,7 +160,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,16 +177,30 @@
       "obsidian-trash-explorer:Open trash explorer": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "308a00dfffb9af45",
   "lastOpenFiles": [
-    "Учет финансов/Utils/Media/Pasted image 20241108202733.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108202949.png",
-    "README.md",
     "Учет финансов/Учет финансов.md",
-    "Учет финансов/Без названия.md",
+    "README.md",
+    "Utils/Temporary/temp_controlFinance.md",
     "Учет финансов/Расходы/Еда/100_08-11-2024.md",
+    "Media/Pasted image 20241108205635.png",
+    "Media/Pasted image 20241108205401.png",
+    "Media/Pasted image 20241108204351.png",
+    "Media/Pasted image 20241108204330.png",
+    "Media/Pasted image 20241108203720.png",
+    "Media/Pasted image 20241108203528.png",
+    "Media/Pasted image 20241108203101.png",
+    "Media/Pasted image 20241108202949.png",
+    "Media/Pasted image 20241108202733.png",
+    "Media/Pasted image 20241108202526.png",
     "Учет финансов/Расходы/Еда",
+    "Utils/Temporary",
+    "Media",
     "Учет финансов/Расходы",
+    "Utils",
+    "Учет финансов",
+    "Учет финансов/Расходы/Еда/1_09-11-2024.md",
+    "Учет финансов/Без названия.md",
     "2.-Как-интегрировать-в-своё-хранилище?.md",
     "Templates/controlFinance_to_refresh_filter.md",
     "Templates/controlFinance_for_commands.md",
@@ -206,20 +223,6 @@
     "Учет финансов/Utils/Словарь ключей/Категория трат/Учеба.md",
     "Учет финансов/Utils/Словарь ключей/Категория трат/Транспорт.md",
     "Учет финансов/Utils/Словарь ключей/Категория трат/Техника.md",
-    "Учет финансов/Utils/Словарь ключей/Категория трат/Развлечения.md",
-    "Учет финансов/Utils/Словарь ключей/Категория трат/Подарки.md",
-    "Учет финансов/Utils/Словарь ключей/Категория трат/Одежда.md",
-    "Учет финансов/Utils/Словарь ключей/Счет",
-    "Учет финансов/Utils/Словарь ключей/Категория трат",
-    "Учет финансов/Utils/Media/Pasted image 20241108205635.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108205401.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108204351.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108204330.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108203720.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108203528.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108203101.png",
-    "Учет финансов/Utils/Media/Pasted image 20241108202526.png",
-    "Учет финансов/Utils/Словарь ключей",
-    "Учет финансов/Utils/Media"
+    "Учет финансов/Utils/Словарь ключей/Категория трат/Развлечения.md"
   ]
 }
