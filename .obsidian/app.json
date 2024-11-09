@@ -6,5 +6,6 @@
   "newFileLocation": "current",
   "propertiesInDocument": "hidden",
   "foldHeading": false,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "showUnsupportedFiles": true
 }

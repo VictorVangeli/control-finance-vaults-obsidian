@@ -1,24 +1,16 @@
 <%*
-console.log("Шаблон начал выполнение.");
-
 if (!tp.config.active_file) {
-    console.log("Ошибка: текущий активный файл не найден.");
+    new Notice("Ошибка: текущий активный файл не найден.");
 } else {
-    console.log("Активный файл найден, читаем содержимое...");
-
     const file = tp.config.active_file;
     const currentContent = await app.vault.read(file);
     const lines = currentContent.split('\n');
 
-    console.log(`Содержимое файла загружено, всего строк: ${lines.length}`);
-
     const startIndex = lines.findIndex(line => line.trim().startsWith('>[!abstract] Учет финансов'));
 
     if (startIndex === -1) {
-        console.log('Строка, начинающаяся с ">[!abstract] Учет финансов", не найдена.');
+        new Notice('Строка, начинающаяся с ">[!abstract] Учет финансов", не найдена.');
     } else {
-        console.log(`Найдена строка для замены на позиции ${startIndex}`);
-
         const frontmatter = tp.frontmatter;
 
         const runVariables = Object.fromEntries(
@@ -63,12 +55,22 @@ if (!tp.config.active_file) {
         };
 
         const filterConditions = createFilterConditions(runVariables);
-        console.log(`Условия фильтрации созданы: ${JSON.stringify(filterConditions)}`);
 
         const newContent = `>[!abstract] Учет финансов
 >
 >>[!info]+ Таблица Доходов
 >>\`\`\`dataviewjs
+>>const parseDate = (dateString) => {
+>>    if (dateString.includes('-')) {
+>>        const [year, month, day] = dateString.split('-');
+>>        return \`\${day.padStart(2, '0')}.\${month.padStart(2, '0')}.\${year}\`;
+>>    } else if (dateString.includes('.')) {
+>>        const [day, month, year] = dateString.split('.');
+>>        return \`\${day.padStart(2, '0')}.\${month.padStart(2, '0')}.\${year}\`;
+>>    }
+>>    return 'Invalid Date';
+>>};
+>>
 >>let filterConditions = ${JSON.stringify(filterConditions)};
 >>let viewLimitIncome = filterConditions.view_list_income || Infinity;
 >>
@@ -77,15 +79,13 @@ if (!tp.config.active_file) {
 >>        let matchType = filterConditions.type 
 >>            ? filterConditions.type.includes(p["Тип"]) 
 >>            : true;
->>
 >>        let matchAccount = filterConditions.account 
 >>            ? filterConditions.account.includes(p["Счет"]) 
 >>            : true;
->>
 >>        let matchCategory = filterConditions.category 
 >>            ? filterConditions.category.includes(p["Категория"]) 
 >>            : true;
->>
+>>        
 >>        let matchPrice = true;
 >>        if (filterConditions.price) {
 >>            if (filterConditions.price.more) {
@@ -101,17 +101,18 @@ if (!tp.config.active_file) {
 >>
 >>        let matchDate = true;
 >>        if (filterConditions.date) {
+>>            const pageDate = parseDate(p["Дата"]);
 >>            if (filterConditions.date.from) {
->>                matchDate = new Date(p["Дата"]) >= new Date(filterConditions.date.from);
+>>                matchDate = pageDate >= parseDate(filterConditions.date.from);
 >>            }
 >>            if (filterConditions.date.to) {
->>                matchDate = matchDate && (new Date(p["Дата"]) <= new Date(filterConditions.date.to));
+>>                matchDate = matchDate && (pageDate <= parseDate(filterConditions.date.to));
 >>            }
 >>        }
->>
+>>        
 >>        return matchType && matchAccount && matchCategory && matchPrice && matchDate;
 >>    })
->>    .sort(p => new Date(p["Дата"]), 'desc')
+>>    .sort(p => parseDate(p["Дата"]), 'desc')
 >>    .slice(0, viewLimitIncome)
 >>    .array();
 >>
@@ -126,7 +127,7 @@ if (!tp.config.active_file) {
 >>        p["Счет"] || '—',
 >>        p["Категория"] || '—',
 >>        p["Сумма"] || '—',
->>        new Date(p["Дата"]).toLocaleDateString('ru-RU') || '—'
+>>        parseDate(p["Дата"]) || '—'
 >>    ]);
 >>    dv.table(["Файл", "Счет", "Категория", "Сумма", "Дата"], tableData);
 >>    dv.paragraph('<div style="text-align: right;"><strong>Итого:</strong> ' + totalOperations + ' операций, Общая сумма: ' + totalSum.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) + '</div>');
@@ -134,8 +135,19 @@ if (!tp.config.active_file) {
 >>\`\`\`
 >>>[!faq|right-fixed] Показать последние: \`INPUT[number:view_list_income]\` записей
 >---
->>[!info]+ 
+>>[!info]+ Таблица расходов
 >>\`\`\`dataviewjs
+>>const parseDate = (dateString) => {
+>>    if (dateString.includes('-')) {
+>>        const [year, month, day] = dateString.split('-');
+>>        return \`\${day.padStart(2, '0')}.\${month.padStart(2, '0')}.\${year}\`;
+>>    } else if (dateString.includes('.')) {
+>>        const [day, month, year] = dateString.split('.');
+>>        return \`\${day.padStart(2, '0')}.\${month.padStart(2, '0')}.\${year}\`;
+>>    }
+>>    return 'Invalid Date';
+>>};
+>>
 >>let filterConditions = ${JSON.stringify(filterConditions)};
 >>let viewLimitExpense = filterConditions.view_list_expense || Infinity;
 >>
@@ -168,17 +180,18 @@ if (!tp.config.active_file) {
 >>
 >>        let matchDate = true;
 >>        if (filterConditions.date) {
+>>            const pageDate = parseDate(p["Дата"]);
 >>            if (filterConditions.date.from) {
->>                matchDate = new Date(p["Дата"]) >= new Date(filterConditions.date.from);
+>>                matchDate = pageDate >= parseDate(filterConditions.date.from);
 >>            }
 >>            if (filterConditions.date.to) {
->>                matchDate = matchDate && (new Date(p["Дата"]) <= new Date(filterConditions.date.to));
+>>                matchDate = matchDate && (pageDate <= parseDate(filterConditions.date.to));
 >>            }
 >>        }
 >>
 >>        return matchType && matchAccount && matchCategory && matchPrice && matchDate;
 >>    })
->>    .sort(p => new Date(p["Дата"]), 'desc')
+>>    .sort(p => parseDate(p["Дата"]), 'desc')
 >>    .slice(0, viewLimitExpense)
 >>    .array();
 >>
@@ -193,7 +206,7 @@ if (!tp.config.active_file) {
 >>        p["Счет"] || '—',
 >>        p["Категория"] || '—',
 >>        p["Сумма"] || '—',
->>        new Date(p["Дата"]).toLocaleDateString('ru-RU') || '—'
+>>        parseDate(p["Дата"]) || '—'
 >>    ]);
 >>    dv.table(["Файл", "Счет", "Категория", "Сумма", "Дата"], tableData);
 >>    dv.paragraph('<div style="text-align: right;"><strong>Итого:</strong> ' + totalOperations + ' операций, Общая сумма: ' + totalSum.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' }) + '</div>');
@@ -206,7 +219,7 @@ if (!tp.config.active_file) {
         const updatedContent = updatedLines.join('\n');
 
         await app.vault.modify(file, updatedContent);
-        console.log("Шаблон выполнен: содержимое файла обновлено и сохранено.");
+        new Notice("Содержимое файла обновлено и сохранено.");
     }
 }
 %>

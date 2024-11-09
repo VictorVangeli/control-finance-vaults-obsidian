@@ -9,7 +9,7 @@
       "fields": [
         {
           "name": "Тип",
-          "label": "Тип",
+          "label": "Вид операции",
           "description": "",
           "isRequired": false,
           "input": {
@@ -34,20 +34,134 @@
           "isRequired": false,
           "input": {
             "type": "select",
-            "source": "notes",
-            "folder": "Учет финансов/Utils/Словарь ключей/Счет"
+            "source": "fixed",
+            "options": [
+              {
+                "value": "Тинькофф",
+                "label": "Тинькофф"
+              },
+              {
+                "value": "РНКБ",
+                "label": "РНКБ"
+              },
+              {
+                "value": "Наличные",
+                "label": "Наличные"
+              },
+              {
+                "value": "Бизнес-счет",
+                "label": "Бизнес-счет"
+              },
+              {
+                "value": "СБЕР",
+                "label": "СБЕР"
+              }
+            ]
           }
         },
         {
-          "name": "Категория трат",
-          "label": "Категория трат",
+          "name": "Категория расхода",
+          "label": "Категория расхода",
           "description": "",
           "isRequired": false,
           "input": {
             "type": "select",
-            "source": "notes",
-            "folder": "Учет финансов/Utils/Словарь ключей/Категория трат"
+            "source": "fixed",
+            "options": [
+              {
+                "value": "Еда",
+                "label": "Еда"
+              },
+              {
+                "value": "Машина",
+                "label": "Машина"
+              },
+              {
+                "value": "Дом",
+                "label": "Дом"
+              },
+              {
+                "value": "Быт",
+                "label": "Быт"
+              },
+              {
+                "value": "Гигиена",
+                "label": "Гигиена"
+              },
+              {
+                "value": "Одежда",
+                "label": "Одежда"
+              },
+              {
+                "value": "Развлечения",
+                "label": "Развлечения"
+              },
+              {
+                "value": "Учеба",
+                "label": "Учеба"
+              },
+              {
+                "value": "Транспорт",
+                "label": "Транспорт"
+              },
+              {
+                "value": "Подарки",
+                "label": "Подарки"
+              },
+              {
+                "value": "Другое",
+                "label": "Другое"
+              }
+            ]
+          },
+          "condition": {
+            "dependencyName": "Тип",
+            "type": "contains",
+            "value": "Расход"
           }
+        },
+        {
+          "name": "Категория дохода",
+          "label": "Категория дохода",
+          "description": "",
+          "input": {
+            "type": "select",
+            "allowUnknownValues": false,
+            "hidden": false,
+            "options": [
+              {
+                "value": "Зарплата",
+                "label": "Зарплата"
+              },
+              {
+                "value": "Выплата по договору",
+                "label": "Выплата по договору"
+              },
+              {
+                "value": "Кредит",
+                "label": "Кредит"
+              },
+              {
+                "value": "Долг",
+                "label": "Долг"
+              },
+              {
+                "value": "Подарок",
+                "label": "Подарок"
+              },
+              {
+                "value": "Другое",
+                "label": "Другое"
+              }
+            ],
+            "source": "fixed"
+          },
+          "condition": {
+            "dependencyName": "Тип",
+            "type": "contains",
+            "value": "Доход"
+          },
+          "isRequired": false
         },
         {
           "name": "Сумма",
@@ -80,7 +194,11 @@
           }
         }
       ],
-      "version": "1"
+      "version": "1",
+      "template": {
+        "createCommand": true,
+        "parsedTemplate": []
+      }
     }
   ]
 }
