@@ -412,7 +412,7 @@ C помощью этого плагина у нас появляется воз
  ![Image](https://raw.githubusercontent.com/VictorVangeli/control-finance-vaults-obsidian/main/.github/images/Pasted%20image%2020241109142826.png)
 
 А в режиме редактирования форм `Manage forms`, нам необходимо определить форму, которую будем вызывать в дальнейшем при обработке нашего `Templater` шаблона
-=======
+
 Содержимое нашей формы в JSON формате, которое можно найти в `.obsidian/plugins/modalforms/data.json`. Скопируйте и дополните уже существующий `data.json`, чтобы не поломать настройку плагина.
 ```{
     {
