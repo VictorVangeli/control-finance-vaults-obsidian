@@ -1,4 +1,4 @@
-![Latest Release](https://img.shields.io/github/v/release/VictorVangeli/control-finance-vaults-obsidian) ![Release Date](https://img.shields.io/github/release-date/VictorVangeli/control-finance-vaults-obsidian) ![License](https://img.shields.io/github/license/VictorVangeli/control-finance-vaults-obsidian) ![GitHub all releases](https://img.shields.io/github/downloads/VictorVangeli/control-finance-vaults-obsidian/total)
+![Latest Release](https://img.shields.io/github/v/release/VictorVangeli/control-finance-vaults-obsidian) ![Release Date](https://img.shields.io/github/release-date/VictorVangeli/control-finance-vaults-obsidian) ![License](https://img.shields.io/github/license/VictorVangeli/control-finance-vaults-obsidian)
 
 # Что делает это хранилище? 
 Control Finance -  это готовое хранилище, которое позволит тебе вести учет своих доходов и расходов.
